@@ -1,8 +1,9 @@
 from wordcloud import WordCloud
+from urlextract import URLExtract
 import pandas as pd
 from collections import Counter
 import emoji
-
+extract = URLExtract()
 def fetch_stats(selected_user,df):
 
     if selected_user != 'Overall':
